@@ -73,12 +73,6 @@ Hébergé sur **GitHub Pages** pour une disponibilité maximale et une maintenan
 - **Python 3.11+**
 - **Docker** (pour lancer les services locaux comme Redis ou simuler Supabase si besoin)
 
-<div_for__other>
-Voici une proposition complète pour le fichier `README.md` de votre projet. Il est rédigé pour être clair, professionnel, et expliquer non seulement ce qu'est l'application, mais aussi son architecture technique de manière précise.
-
-Vous pouvez copier-coller ce contenu dans le fichier `README.md` à la racine de votre dépôt principal.
-
-```markdown
 # 🧠 MindForge - L'Écosystème Intelligent pour l'Enseignement au Cameroun
 
 <div align="center">
@@ -154,7 +148,8 @@ Hébergé sur **GitHub Pages** pour une disponibilité maximale et une maintenan
 - **Python 3.11+**
 - **Docker** (pour lancer les services locaux comme Redis ou simuler Supabase si besoin)
 
-### Démarrage du Frontend```bash
+### Démarrage du Frontend
+```bash
 cd frontend
 flutter pub get
 flutter run
