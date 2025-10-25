@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le titre de la page change, mais tout le reste est identique -->
+    <title>Recharger - MindForge</title>
+
+    <!-- On lie les MÊMES fichiers de style et de script. Pas besoin de réinventer la roue. -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================== En-tête de la page (Identique) ==================== -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">MindForge</div>
+                <div class="nav-links">
+                    <!-- On pourrait styliser différemment le lien de la page active plus tard -->
+                    <a href="recharge.html" class="nav-button">Recharger</a>
+                    <a href="support.html" class="nav-button">Support</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== Contenu Principal de la Page Recharge ==================== -->
+    <main>
+        <section class="recharge-section">
+            <div class="container">
+                <h2>Rechargez vos Jetons</h2>
+                <p class="subtitle">Choisissez un montant et payez simplement avec votre méthode de paiement mobile
+                    préférée.</p>
+
+                <!-- La carte qui contiendra le convertisseur et les boutons -->
+                <div class="recharge-card">
+
+                    <!-- Le convertisseur -->
+                    <h3>Convertisseur</h3>
+                    <div class="converter">
+                        <div class="form-group">
+                            <label for="fcfa-input">Montant à payer (FCFA)</label>
+                            <input type="number" id="fcfa-input" placeholder="Ex: 1000">
+                        </div>
+                        <div class="arrow-symbol">→</div>
+                        <div class="form-group">
+                            <label for="jetons-output">Jetons que vous recevrez</label>
+                            <input type="text" id="jetons-output" readonly placeholder="2500">
+                        </div>
+                    </div>
+                    <div class="conversion-rate">Taux : 100 FCFA = 250 Jetons</div>
+
+                    <!-- Les boutons de paiement -->
+                    <h3>Choisissez votre méthode de paiement</h3>
+                    <div class="payment-buttons">
+                        <a href="#" class="payment-btn orange-money">
+                            Payer avec <strong>Orange Money</strong>
+                        </a>
+                        <a href="#" class="payment-btn mtn-money">
+                            Payer avec <strong>MTN Mobile Money</strong>
+                        </a>
+                    </div>
+                    <p class="info-text">Vous serez redirigé vers une interface de paiement sécurisée pour finaliser
+                        votre transaction.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== Pied de page (Identique) ==================== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MindForge. Tous droits réservés.</p>
+            <p>Conçu et développé au Cameroun 🇨🇲</p>
+        </div>
+    </footer>
+
+    <!-- On ajoute le lien vers notre fichier script, juste avant la fin du body. -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
