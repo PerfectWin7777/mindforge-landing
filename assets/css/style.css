@@ -64,11 +64,23 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* PAR DÉFAUT : les éléments sont en colonne (vertical) */
     align-items: center;
-    flex-wrap: wrap;
+    /* On centre tout horizontalement */
+    gap: 1rem;
+    /* Un espace propre entre le logo et le bloc de boutons */
 }
 
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permet aux boutons de passer à la ligne si besoin */
+    justify-content: center;
+    /* Centre les boutons dans leur conteneur */
+    gap: 0.5rem;
+    /* Espace entre les boutons eux-mêmes */
+}
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -78,11 +90,12 @@ header {
 .nav-links .nav-button {
     color: var(--text-primary);
     text-decoration: none;
-    margin-left: 1rem;
     padding: 0.5rem 1rem;
     border: 1px solid var(--primary-color);
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+    /* Empêche le texte des boutons de se casser sur deux lignes */
 }
 
 .nav-links .nav-button:hover {
@@ -90,6 +103,15 @@ header {
     color: #fff;
 }
 
+/* SEULEMENT pour les écrans de 768px et plus (tablettes, ordinateurs) */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        /* On repasse en mode horizontal */
+        justify-content: space-between;
+        /* On les pousse aux extrémités */
+    }
+}
 
 /* ==========================================================================
    Styles de la Section "Héros" (Première impression)
