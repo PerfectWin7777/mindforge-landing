@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (fcfaInput && jetonsOutput) {
 
         // On définit notre taux de conversion.
-        const TAUX_CONVERSION = 0.6; // 60 Jetons / 100 FCFA
+        const TAUX_CONVERSION = 2.5; // 250 Jetons / 100 FCFA
 
         // Fonction qui fait le calcul
         function calculerConversion() {
